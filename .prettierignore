@@ -1,0 +1,9 @@
+dist
+node_modules/**/*
+.vscode
+package.json
+package-lock.json
+tsconfig.json
+tsconfig.types/json
+yarn.lock
+yarn-error.log
