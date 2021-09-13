@@ -23,11 +23,8 @@
     "dev": "yarn clean && cross-env NODE_ENV=development babel -w src -d dist --verbose --extensions .ts --ignore \"src/**/*.d.ts\",\"src/**/*.test.ts\" --source-maps",
     "typescript": "tsc",
     "eslint": "eslint src/*",
-    "test:all": "jest",
-    "test:update": "jest --update-snapshot",
-    "test:watch": "jest --watch",
     "eslint:fix": "eslint --fix",
-    "git-pre-push": "npm run build && npm run eslint && npm run typescript && npm run test:all",
+    "git-pre-push": "npm run build && npm run eslint && npm run typescript",
     "release": "np"
   },
   "repository": {
@@ -43,7 +40,6 @@
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-typescript": "^7.10.4",
-    "@types/jest": "^26.0.13",
     "@types/semver": "^7.3.3",
     "@types/webpack": "^4.44.1",
     "@typescript-eslint/eslint-plugin": "^3.9.1",
@@ -55,7 +51,6 @@
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^4.3.0",
-    "jest": "^26.4.2",
     "lint-staged": "^10.3.0",
     "np": "^6.5.0",
     "prettier": "^2.4.0",
