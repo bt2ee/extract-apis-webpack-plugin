@@ -89,11 +89,11 @@ class ExtractApisPlugin {
 
         if (this.paths.length !== 0) {
             if (hooks) {
-                hooks.emit.tap('extract-apis-webpack-plugin', (compilation) => {
+                hooks.emit.tap('extract-apis-webpack-plugin', (compilation: Compilation) => {
                     this.handleInitial(compilation);
                 });
             } else {
-                compiler.plugin('emit', (compilation, callback) => {
+                compiler.plugin('emit', (compilation: Compilation, callback: any) => {
                     try {
                         this.handleInitial(compilation);
                         callback();
@@ -105,11 +105,11 @@ class ExtractApisPlugin {
         }
 
         if (hooks) {
-            hooks.done.tap('extract-apis-webpack-plugin', (stats) => {
+            hooks.done.tap('extract-apis-webpack-plugin', (stats: Stats) => {
                 this.handleDone(stats);
             });
         } else {
-            compiler.plugin('done', (stats) => {
+            compiler.plugin('done', (stats: Stats) => {
                 this.handleDone(stats);
             });
         }

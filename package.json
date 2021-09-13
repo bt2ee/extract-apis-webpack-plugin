@@ -59,13 +59,11 @@
     "read-pkg-up": "^7.0.1",
     "semver": "^7.3.2",
     "typescript": "^3.9.7",
-    "universal-diff": "^2.0.2"
+    "universal-diff": "^2.0.2",
+    "webpack": "^4.44.1"
   },
   "peerDependencies": {
     "webpack": "*"
   },
-  "homepage": "https://github.com/sqshada/extract-apis-webpack-plugin-#readme",
-  "dependencies": {
-    "@types/webpack": "^5.28.0"
-  }
+  "homepage": "https://github.com/sqshada/extract-apis-webpack-plugin-#readme"
 }
