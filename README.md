@@ -8,17 +8,17 @@
 
 ### Install
 ```sh
-$ yarn add extract-apis-webpack-plugin --dev
+$ yarn add @shadasd/extract-apis-webpack-plugin --dev
 ```
 或
 
 ```bash
-$ npm install extract-apis-webpack-plugin --dev
+$ npm install @shadasd/extract-apis-webpack-plugin --dev
 ```
 ### Usage
 webpack:
 ```js
-const { ExtractApisPlugin } = require("extract-apis-webpack-plugin")
+const { ExtractApisPlugin } = require("@shadasd/extract-apis-webpack-plugin")
 
 plugins: [
   new ExtractApisPlugin()
