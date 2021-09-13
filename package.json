@@ -27,7 +27,6 @@
     "test:update": "jest --update-snapshot",
     "test:watch": "jest --watch",
     "eslint:fix": "eslint --fix",
-    "git-pre-push": "npm run build && npm run eslint && npm run typescript && npm run test:all",
     "release": "np"
   },
   "repository": {
